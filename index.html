@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+     <meta charset="UTF-8">
+     <link href="css/common.css" rel="stylesheet" />
+     <link href="css/default.css" rel="stylesheet" />
+     <title>지상지하 주요시설물 공간정보 표출 플랫폼</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+     <script type="text/javascript">
+         $(document).ready(function () {
+            $("#FistArea").on('change', function() {
+
+				if($("#FistArea option:selected").val() == 1){
+                    //$("#SecondArea option[value='0']").remove();
+        			$("#SecondArea").append("<option value='1'>남구</option>");
+        			$("#SecondArea").append("<option value='2'>동구</option>");
+		        	$("#SecondArea").append("<option value='3'>달서구</option>");
+        			$("#SecondArea").append("<option value='4'>달성군</option>");
+        			$("#SecondArea").append("<option value='5'>북구</option>");
+        			$("#SecondArea").append("<option value='6'>서구</option>");
+        			$("#SecondArea").append("<option value='7'>수성구</option>");
+       			}
+			});
+         });
+
+         function getData(){
+            var a = $("#FistArea option:selected").val();
+            var b = $("#SecondArea option:selected").val();
+            var c = $("#ThirdArea option:selected").val();
+
+            if(a == 1){
+                //남구
+                if(b == 1){
+                    //VR
+                    if(c == 1){
+                        // 현재탭 링크
+                        //$(location).attr('href',"링크주소");
+                        // 새탭 링크
+                        window.open("링크주소");
+                    }
+                    //AR
+                    else if(c == 2){
+		                window.open("링크주소");
+                    }
+                }
+                //동구
+                else if(b == 2){
+                    //VR
+                    if(c == 1){
+		                window.open("링크주소");
+                    }
+                    //AR
+                    else if(c == 2){
+		                window.open("링크주소");
+                    }
+                }
+                //달서구
+                else if(b == 3){
+                    //VR
+                    if(c == 1){
+		                window.open("링크주소");
+                    }
+                    //AR
+                    else if(c == 2){
+		                window.open("링크주소");
+                    }
+                }
+                //달성군
+                else if(b == 4){
+                    //VR
+                    if(c == 1){
+		                window.open("링크주소");
+                    }
+                    //AR
+                    else if(c == 2){
+		                window.open("링크주소");
+                    }
+                }
+                //북구
+                else if(b == 5){
+                    //VR
+                    if(c == 1){
+		                window.open("링크주소");
+                    }
+                    //AR
+                    else if(c == 2){
+		                window.open("링크주소");
+                    }
+                }
+                //서구
+                else if(b == 6){
+                    //VR
+                    if(c == 1){
+		                window.open("링크주소");
+                    }
+                    //AR
+                    else if(c == 2){
+		                window.open("링크주소");
+                    }
+                }
+                //수성구
+                else if(b == 7){
+                    //VR
+                    if(c == 1){
+		                window.open("링크주소");
+                    }
+                    //AR
+                    else if(c == 2){
+		                window.open("링크주소");
+                    }
+                }
+            }
+         }
+     </script>
+
+ </head>
+
+     <link href="https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean" rel="stylesheet">
+     <style>
+         p{font-family: 'Jua', sans-serif;}
+         fieldset select{font-family: 'Do Hyeon', sans-serif;}
+         fieldset button{font-family: 'Do Hyeon', sans-serif;}
+     </style>
+
+ <body>
+
+  <div id="wrap">
+    <div class="m_title">
+      <p> 지상/지하 주요 시설물<br /> 공간정보 표출 플랫폼</p>
+    </div>
+    <div class="m_btn">
+        <fieldset>
+          <select id="FistArea" name="FistArea">
+              <option selected value="0"><p class="a">시/도</p></option>
+              <option value="1">대구광역시</option>
+          </select>
+
+          <select id="SecondArea" name="SecondArea">
+              <option selected value="0">시/군/구</option>
+          </select>
+
+          <select id="ThirdArea" name="ThirdArea">
+              <option selected value="0">DataType</option>
+              <option value="1">VR DATA</option>
+              <option value="2">AR DATA</option>
+          </select>
+          <button type="button" id="btnDownLoad" onClick="getData()">DOWNLOAD</button>
+        </fieldset>
+    </div>
+    <p class="bottomText">
+      본 시스템은 중소기업기술정보진흥원의 지원을 받아 구축되었습니다.
+    </p>
+  </div>
+ </body>
+</html>
