@@ -13,13 +13,13 @@
 
 				if($("#FistArea option:selected").val() == 1){
                     //$("#SecondArea option[value='0']").remove();
-        			$("#SecondArea").append("<option value='1'>남구</option>");
-        			$("#SecondArea").append("<option value='2'>동구</option>");
-		        	$("#SecondArea").append("<option value='3'>달서구</option>");
-        			$("#SecondArea").append("<option value='4'>달성군</option>");
-        			$("#SecondArea").append("<option value='5'>북구</option>");
-        			$("#SecondArea").append("<option value='6'>서구</option>");
-        			$("#SecondArea").append("<option value='7'>수성구</option>");
+        			$("#SecondArea").append("<option value='1'>&nbsp;남구</option>");
+        			$("#SecondArea").append("<option value='2'>&nbsp;동구</option>");
+		        	$("#SecondArea").append("<option value='3'>&nbsp;달서구</option>");
+        			$("#SecondArea").append("<option value='4'>&nbsp;달성군</option>");
+        			$("#SecondArea").append("<option value='5'>&nbsp;북구</option>");
+        			$("#SecondArea").append("<option value='6'>&nbsp;서구</option>");
+        			$("#SecondArea").append("<option value='7'>&nbsp;수성구</option>");
        			}
 			});
          });
@@ -117,11 +117,19 @@
  </head>
 
      <link href="https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap&subset=korean" rel="stylesheet">
+
      <style>
-         p{font-family: 'Jua', sans-serif;}
-         fieldset select{font-family: 'Do Hyeon', sans-serif;}
-         fieldset button{font-family: 'Do Hyeon', sans-serif;}
+         p{font-family: 'Black Han Sans', sans-serif;} /* 타이틀 폰트모양 */
+         /* p{font-family: 'Black Han Sans', sans-serif;} */
+         /* fieldset select{font-family: 'Do Hyeon', sans-serif;} */
+         /* fieldset select{font-family: 'Do Hyeon', sans-serif;} */
+         /* fieldset select{font-family: 'Jua', sans-serif;} */  
+         fieldset select{font-family: 'Nanum Gothic', sans-serif;} /* 선택버튼 폰트모양 */
+         fieldset button{font-family: 'Do Hyeon', sans-serif;} /* 다운로드 버튼 폰트모양 */
      </style>
 
  <body>
@@ -133,18 +141,18 @@
     <div class="m_btn">
         <fieldset>
           <select id="FistArea" name="FistArea">
-              <option selected value="0"><p class="a">시/도</p></option>
-              <option value="1">대구광역시</option>
+              <option selected value="0"><p class="a">&nbsp;시/도</p></option>
+              <option value="1">&nbsp;대구광역시</option>
           </select>
 
           <select id="SecondArea" name="SecondArea">
-              <option selected value="0">시/군/구</option>
+              <option selected value="0">&nbsp;시/군/구</option>
           </select>
 
           <select id="ThirdArea" name="ThirdArea">
-              <option selected value="0">DataType</option>
-              <option value="1">VR DATA</option>
-              <option value="2">AR DATA</option>
+              <option selected value="0">&nbsp;DataType</option>
+              <option value="1">&nbsp;VR DATA</option>
+              <option value="2">&nbsp;AR DATA</option>
           </select>
           <button type="button" id="btnDownLoad" onClick="getData()">DOWNLOAD</button>
         </fieldset>
