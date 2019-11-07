@@ -10,8 +10,8 @@ input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
 header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block}a { text-decoration:none; color:#111; font-size:13px; }
 body {text-size-adjust:none;-webkit-text-size-adjust:none; }
 div {word-break:break-all;}
-::-moz-selection{background:#303F6B;color:#fff;text-shadow:none}
-::selection{background:#303F6B;color:#fff;text-shadow:none}
+::-moz-selection{background:#009bc7;color:#fff;text-shadow:none}
+::selection{background:#009bc7;color:#fff;text-shadow:none}
 .clfix:after {content: "."; display: block; height: 0px; clear: both; visibility: hidden;}
 .clfix {display: inline-block;}
 .clfix {display: block;}
